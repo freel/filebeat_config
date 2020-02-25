@@ -9,7 +9,11 @@ filebeat.inputs:
 output.kafka:
 #  codec.format:
 #    string: '%{[@timestamp]} %{[message]}'
+<<<<<<< HEAD
   hosts: ["10.128.0.26:29092", "10.128.0.28:29092, "10.128.0.28:29092"]
+=======
+  hosts: ["10.128.0.26:29092","10.128.0.27:29092,"10.128.0.28:29092"]
+>>>>>>> f33af545659ba0d43022e9ba96a37424effadf61
 #  hosts: ["10.128.0.26:29092"]
   topic: 'log'
   partition.round_robin:
